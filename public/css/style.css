@@ -1,0 +1,246 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 1 août 2014, 11:37:36
+    Author     : root
+*/
+
+body{
+    color: #666;
+    font-family: tahoma;
+    font-size: 13px;
+}
+
+.custom{ margin-top: 60px;}
+.form_recherche{ margin-top: 100px;margin-bottom: 20px;}
+.message_danger{padding: 15px; text-align: center}
+.custom-footer{height: 150px; background-color: #A42A2A; border-top: solid 1px #000000;}
+.custom_separateur_facture{height: 40px; background-color: #A42A2A;}
+.custom-heigt{min-height: 570px;}
+.logo_ccg{margin: auto;}
+.custom-align{text-align: center;}
+.custom-btb-recherche{width: 43%;}
+.form_recherche_hor{margin-bottom: 20px;}
+.navbar-inverse{background-color:#A42A2A !important;}
+.navbar-inverse .navbar-nav > li > a, .zone {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.navbar-inverse .navbar-nav > li.active > a {
+    color: #A42A2A !important;
+    background-color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+.navbar-inverse .navbar-brand {
+    color: #000000;
+}
+.navbar-brand{padding: 5px;}
+.facture-vignette table{
+    border: 1px dashed #aaaaaa;
+    border-collapse: unset !important;
+}
+.border-tab{
+
+    border: 1px solid #aaaaaa;
+}
+.table > thead >
+tr > th, .table >
+tbody > tr > th,
+.table > tfoot >
+tr > th, .table >
+thead > tr > td,
+.table > tbody >
+tr > td, .table >
+tfoot > tr > td{
+
+    border-top: none !important;
+}
+
+.facture-link{
+    text-align: right ;
+}
+.btn-link-facture{background-color: gray; color: #FFFFFF;}
+.cadre-menu-left{border: 1px solid #efefef;}
+.cadre-menu-left li {border-bottom:  1px solid #efefef;
+    padding: 5px;
+}
+.titre-menu-left{background-color: #eeeeee; padding: 10px 0;text-align: center;}
+.statut_facture_1{background-color: yellow; }
+.statut_facture_2{background-color: limegreen; }
+.statut_facture_3{background-color: red; }
+.custom-height-entete{
+    background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.3) 0%, rgba(40, 40, 40, 0.3) 100%) repeat scroll 0 0 #cccccc;
+    font-size: 14px;
+    height: 84px;
+    background-color: #0083a2 ;
+}
+.custom-width-input{width: 76% !important;}
+.custom-submit-ajouter{margin-top: 10px;}
+.custom-submit-ajouter input{width: 100%;}
+.border-form{
+    border: 1px dashed #aaaaaa;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+}
+
+
+.cadre-prix-total {
+    border: 1px dotted #6d3f6d;
+    color: #6d3f6d;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.liste-articles{
+    text-align: center;
+}
+.liste-articles li{
+    list-style-type: none;
+}
+
+.titre-facture{
+    background-color: #428bca !important;
+    color: white !important;
+    font-size: large !important;
+    padding: 10px !important;
+    text-align: center;
+}
+
+.detail-facture{
+    border-bottom: 2px solid #428bca;
+    background-color: white;
+}
+
+.lien-telechargement{
+    padding: 10px;
+}
+
+.btn-vente{
+    width: 100%;
+}
+
+.cacher{
+    display: none;
+}
+
+.form-paiement,
+.form-commande,
+.form-valide-commande,
+.form-valide-facture,
+.form-commande-facture,
+.bond_livraison,
+.form-valide-bond,
+.form-valide-commande-fournisseur,
+.div-valide-commande{
+    padding: 10px;
+}
+
+.panel-titre{
+
+    cursor: pointer;
+}
+.panel-titre:hover{
+    background-color: #428bca;
+    color: white;
+}
+
+.filtre-form{
+    display: block !important;
+}
+
+.btn-vente{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div-compte{
+    margin: 10px 10px 0 10px;
+}
+
+.border-photo
+{
+    /* border: solid 1px #25bb30 !important;*/
+    width: 25% !important;
+    text-align: center !important;
+
+}
+
+.completion{
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+.completion:hover{
+    background-color: #c0c0c0;
+}
+
+#select_client{
+    z-index: 99;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    position: absolute;
+    width: 90%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#img-loader{
+    width: 50px;
+    height: 50px;
+}
+
+.zone{
+    padding-top: 15px;
+}
+
+
+//recu
+  .client-recu{
+      text-align: right;
+  }
+
+.custom-width-btn-panel{
+    width: 100% !important;
+}
+
+.borderleft {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-color: #f1f1f1 #f1f1f1 #f1f1f1 #28a4c9 !important;
+    border-image: none !important;
+    border-style: solid !important;
+    border-width: 1px 1px 1px 3px !important;
+    box-shadow: -5px 5px 2px #f1f1f1;
+}
+.cadre-menu-left {
+    border: 1px solid #f1f1f1;
+}
+
+.message_danger {
+    padding: 15px;
+    text-align: center;
+}
+
+html body div.container-fluid.custom div.custom-heigt div.row div.col-sm-9 div.row div.col-sm-4 div.thumbnail div.caption h4{
+    text-align: center;
+}
+div.vignette-projet{
+//opacity: 0.5;
+}
+
+.label-plafond{
+    float: right;
+    margin-right: 23px;
+}
+
