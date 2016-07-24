@@ -39,6 +39,10 @@ class CommandeController extends Controller {
                 ':qte'=>$data['qte_'.$i],
                 ':type'=>$data['type'],
             ));
+
+            if($error){
+                $this->updateProduitQte($data['libelle_'.$i], $data['qte_'.$i], $data['type']);
+            }
         }
         parent::deconnexionBD();
         return $error;
@@ -92,5 +96,18 @@ class CommandeController extends Controller {
         }
 
         return $redirect;
+    }
+
+    private function updateProduitQte($id, $qte, $type){
+        $con = parent::connexionBD();
+        $query = $con->prepare("UPDATE produit SET qtestock = qtestock + :qte WHERE id = :id");
+        $error = $query->execute(array(
+            ':qte' => ($type == 1)? $qte * -1: $qte * 1,
+            ':id' => $id,
+        ));
+
+        parent::deconnexionBD();
+
+        return $this->traiterResponse($error);
     }
 }

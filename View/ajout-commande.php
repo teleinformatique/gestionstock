@@ -33,6 +33,14 @@ mb_http_output('UTF-8');
             <label for="datetimepicker">Date de livraison </label>
             <input class="form-control datetimepicker" type="datetime"  name="date_livraison" value="" >
         </div>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+        </div>
         <div class="form-group commande-client">
             <label for="delai">Mode livraison</label>
             <select name="delai" id="delai" class="form-control">

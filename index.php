@@ -4,12 +4,12 @@ session_start();
 ob_start();
 //Controlleur frontal de lapplication.
 include $_SERVER['DOCUMENT_ROOT'].'/gestionstock/utility/main.inc.php';
-include_once DOCUMENT_ROOT.'Model/BDAcess.php';
+//include_once DOCUMENT_ROOT.'Model/BDAcess.php';
 include_once DOCUMENT_ROOT.'Controller/ProduitController.php';
 include_once DOCUMENT_ROOT.'Controller/ClientController.php';
 include_once DOCUMENT_ROOT.'Controller/CommandeController.php';
 include_once DOCUMENT_ROOT.'Controller/UserController.php';
-BDAcess::connexion(BD_NAME, BD_USER,BD_PASSWORD);
+//BDAcess::connexion(BD_NAME, BD_USER,BD_PASSWORD);
 
 
 
@@ -177,7 +177,7 @@ if (isset($_GET['page'])) {
 }
 else {
 
-    include_once DOCUMENT_ROOT.'View/connexion.tpl.php';
+    include_once DOCUMENT_ROOT.'View/connexion.php';
 }
 
 //template pied de page de l'application

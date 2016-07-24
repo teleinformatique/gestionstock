@@ -2,7 +2,7 @@
 mb_http_output('UTF-8');
 ?>
 <div class="row col-md-12">
-    <h1>Liste des produits</h1>
+    <h1>Liste des commandes</h1>
     <hr>
     <table class="table table-striped ">
         <thead>
